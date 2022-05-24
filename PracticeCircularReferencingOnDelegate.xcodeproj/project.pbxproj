@@ -17,6 +17,8 @@
 		1CC71289283CD18100FF4CED /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC71288283CD18100FF4CED /* SecondViewController.swift */; };
 		1CC7128B283CD1FE00FF4CED /* Third.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CC7128A283CD1FE00FF4CED /* Third.storyboard */; };
 		1CC7128D283CD20600FF4CED /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC7128C283CD20600FF4CED /* ThirdViewController.swift */; };
+		1CC7128F283CD41200FF4CED /* StoryboardName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC7128E283CD41200FF4CED /* StoryboardName.swift */; };
+		1CC71291283CD42E00FF4CED /* StoryboardIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC71290283CD42E00FF4CED /* StoryboardIdentifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		1CC71288283CD18100FF4CED /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		1CC7128A283CD1FE00FF4CED /* Third.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Third.storyboard; sourceTree = "<group>"; };
 		1CC7128C283CD20600FF4CED /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		1CC7128E283CD41200FF4CED /* StoryboardName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardName.swift; sourceTree = "<group>"; };
+		1CC71290283CD42E00FF4CED /* StoryboardIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardIdentifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 				1CC71272283CCFD000FF4CED /* AppDelegate.swift */,
 				1CC71274283CCFD000FF4CED /* SceneDelegate.swift */,
 				1CC71276283CCFD000FF4CED /* ViewController.swift */,
+				1CC7128E283CD41200FF4CED /* StoryboardName.swift */,
+				1CC71290283CD42E00FF4CED /* StoryboardIdentifier.swift */,
 				1CC71278283CCFD000FF4CED /* Main.storyboard */,
 				1CC71288283CD18100FF4CED /* SecondViewController.swift */,
 				1CC71286283CD0D700FF4CED /* Second.storyboard */,
@@ -155,6 +161,8 @@
 				1CC71289283CD18100FF4CED /* SecondViewController.swift in Sources */,
 				1CC71277283CCFD000FF4CED /* ViewController.swift in Sources */,
 				1CC7128D283CD20600FF4CED /* ThirdViewController.swift in Sources */,
+				1CC71291283CD42E00FF4CED /* StoryboardIdentifier.swift in Sources */,
+				1CC7128F283CD41200FF4CED /* StoryboardName.swift in Sources */,
 				1CC71273283CCFD000FF4CED /* AppDelegate.swift in Sources */,
 				1CC71275283CCFD000FF4CED /* SceneDelegate.swift in Sources */,
 			);
