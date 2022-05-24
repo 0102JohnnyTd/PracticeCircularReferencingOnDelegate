@@ -12,23 +12,17 @@ class SecondViewController: UIViewController {
 
     @IBAction func showThirdVC(_ sender: Any) {
         thirdVC = UIStoryboard(name: StoryboardName.third, bundle: nil).instantiateViewController(withIdentifier: StoryboardIdentifier.third) as! ThirdViewController
+
+        thirdVC?.delegate = self
         }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-    
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension SecondViewController: CustomDelegate {
+    func completion() {
+        print(#function)
     }
-    */
-
 }

@@ -70,9 +70,9 @@
 			children = (
 				1CC71272283CCFD000FF4CED /* AppDelegate.swift */,
 				1CC71274283CCFD000FF4CED /* SceneDelegate.swift */,
-				1CC71276283CCFD000FF4CED /* ViewController.swift */,
 				1CC7128E283CD41200FF4CED /* StoryboardName.swift */,
 				1CC71290283CD42E00FF4CED /* StoryboardIdentifier.swift */,
+				1CC71276283CCFD000FF4CED /* ViewController.swift */,
 				1CC71278283CCFD000FF4CED /* Main.storyboard */,
 				1CC71288283CD18100FF4CED /* SecondViewController.swift */,
 				1CC71286283CD0D700FF4CED /* Second.storyboard */,
