@@ -15,12 +15,11 @@ class ThirdViewController: UIViewController {
     var delegate: CustomDelegate?
 
     @IBAction func goBackSecondVC(_ sender: Any) {
+        delegate?.completion()
         self.navigationController?.popViewController(animated: true)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
     }
 }
