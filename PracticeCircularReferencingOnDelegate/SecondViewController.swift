@@ -11,10 +11,13 @@ class SecondViewController: UIViewController {
     private var thirdVC: ThirdViewController?
 
     @IBAction func showThirdVC(_ sender: Any) {
-        thirdVC = UIStoryboard(name: StoryboardName.third, bundle: nil).instantiateViewController(withIdentifier: StoryboardIdentifier.third) as! ThirdViewController
+        thirdVC = UIStoryboard(name: StoryboardName.third, bundle: nil).instantiateViewController(withIdentifier: StoryboardIdentifier.third) as? ThirdViewController
 
-        thirdVC?.delegate = self
+        if let nextVC = thirdVC {
+            nextVC.delegate = self
+            navigationController?.pushViewController(nextVC, animated: true)
         }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
