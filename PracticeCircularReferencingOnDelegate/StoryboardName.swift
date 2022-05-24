@@ -9,4 +9,5 @@ import Foundation
 
 enum StoryboardName {
     static let second = "Second"
+    static let third = "Third"
 }
