@@ -14,6 +14,10 @@ protocol CustomDelegate: AnyObject {
 class ThirdViewController: UIViewController {
     var delegate: CustomDelegate?
 
+    @IBAction func goBackSecondVC(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
