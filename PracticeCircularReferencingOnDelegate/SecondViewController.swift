@@ -18,10 +18,6 @@ class SecondViewController: UIViewController {
             navigationController?.pushViewController(nextVC, animated: true)
         }
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
 }
 
 extension SecondViewController: CustomDelegate {

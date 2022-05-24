@@ -13,6 +13,5 @@ class ViewController: UIViewController {
 
         navigationController?.pushViewController(secondVC, animated: true)
     }
-
 }
 

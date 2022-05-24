@@ -18,8 +18,4 @@ class ThirdViewController: UIViewController {
         delegate?.completion()
         self.navigationController?.popViewController(animated: true)
     }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
 }
