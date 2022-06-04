@@ -11,12 +11,13 @@ class SecondViewController: UIViewController {
     private var thirdVC: ThirdViewController?
 
     @IBAction func showThirdVC(_ sender: Any) {
-        thirdVC = UIStoryboard(name: StoryboardName.third, bundle: nil).instantiateViewController(withIdentifier: StoryboardIdentifier.third) as? ThirdViewController
-
-        if let nextVC = thirdVC {
-            nextVC.delegate = self
-            navigationController?.pushViewController(nextVC, animated: true)
-        }
+        // ThirdViewControllerクラスのインスタンスの参照カウントが+1(合計参照カウント+1)
+        thirdVC = (UIStoryboard(name: StoryboardName.third, bundle: nil).instantiateViewController(withIdentifier: StoryboardIdentifier.third) as! ThirdViewController)
+        // self = SecondViewControllerの参照カウントが+1(合計参照カウント+2)
+        // しかしdelegateにweak属性がついているので参照カウントは変わらない。(合計参照カウント+1)
+        thirdVC?.delegate = self
+        // ThirdViewControllerクラスのインスタンスの参照カウントが+1(合計参照カウント+2)
+        navigationController?.pushViewController(thirdVC!, animated: true)
     }
 }
 
