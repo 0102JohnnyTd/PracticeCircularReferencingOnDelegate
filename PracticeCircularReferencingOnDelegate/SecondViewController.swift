@@ -21,7 +21,7 @@ class SecondViewController: UIViewController {
     }
 }
 
-extension SecondViewController: CustomDelegate {
+extension SecondViewController: ThirdViewControllerDelegate {
     func completion() {
         print(#function)
     }

@@ -7,12 +7,12 @@
 
 import UIKit
 
-protocol CustomDelegate: AnyObject {
+protocol ThirdViewControllerDelegate: AnyObject {
     func completion()
 }
 
 final class ThirdViewController: UIViewController {
-    weak var delegate: CustomDelegate?
+    weak var delegate: ThirdViewControllerDelegate?
 
     @IBAction func goBackSecondVC(_ sender: Any) {
         delegate?.completion()
