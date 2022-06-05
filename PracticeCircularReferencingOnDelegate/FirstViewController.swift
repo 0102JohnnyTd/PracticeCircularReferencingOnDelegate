@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  FirstViewController.swift
 //  PracticeCircularReferencingOnDelegate
 //
 //  Created by Johnny Toda on 2022/05/24.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class ViewController: UIViewController {
+final class FirstViewController: UIViewController {
     @IBAction private func showSecondVC(_ sender: Any) {
         // SecondViewControllerクラスのインスタンスの参照カウントが+1(合計参照カウント+1)
         let secondVC = UIStoryboard(name: StoryboardName.second, bundle: nil).instantiateViewController(withIdentifier: StoryboardIdentifier.second) as! SecondViewController
