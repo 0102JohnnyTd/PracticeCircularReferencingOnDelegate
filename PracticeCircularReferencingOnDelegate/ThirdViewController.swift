@@ -19,4 +19,9 @@ final class ThirdViewController: UIViewController {
         // ❓pushViewControllerが引数としてもってるThirdViewControllerクラスのインスタンスの参照カウントが-1(合計参照カウント+1)
         self.navigationController?.popViewController(animated: true)
     }
+
+    deinit {
+        print("ThirdVCがdeinitされた")
+    }
+
 }

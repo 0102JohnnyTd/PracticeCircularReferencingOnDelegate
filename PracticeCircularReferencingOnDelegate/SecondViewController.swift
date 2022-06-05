@@ -19,6 +19,11 @@ final class SecondViewController: UIViewController {
         // ThirdViewControllerクラスのインスタンスの参照カウントが+1(合計参照カウント+2)
         navigationController?.pushViewController(thirdVC!, animated: true)
     }
+
+    deinit {
+        print("SecondVCがdeinitされた")
+    }
+
 }
 
 extension SecondViewController: ThirdViewControllerDelegate {
