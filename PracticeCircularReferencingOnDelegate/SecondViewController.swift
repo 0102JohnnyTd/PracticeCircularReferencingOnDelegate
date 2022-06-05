@@ -7,10 +7,10 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+final class SecondViewController: UIViewController {
     private var thirdVC: ThirdViewController?
 
-    @IBAction func showThirdVC(_ sender: Any) {
+    @IBAction private func showThirdVC(_ sender: Any) {
         // ThirdViewControllerクラスのインスタンスの参照カウントが+1(合計参照カウント+1)
         thirdVC = (UIStoryboard(name: StoryboardName.third, bundle: nil).instantiateViewController(withIdentifier: StoryboardIdentifier.third) as! ThirdViewController)
         // self = SecondViewControllerの参照カウントが+1(合計参照カウント+2)

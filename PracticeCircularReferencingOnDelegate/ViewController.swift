@@ -7,8 +7,8 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    @IBAction func showSecondVC(_ sender: Any) {
+final class ViewController: UIViewController {
+    @IBAction private func showSecondVC(_ sender: Any) {
         // SecondViewControllerクラスのインスタンスの参照カウントが+1(合計参照カウント+1)
         let secondVC = UIStoryboard(name: StoryboardName.second, bundle: nil).instantiateViewController(withIdentifier: StoryboardIdentifier.second) as! SecondViewController
 
@@ -17,4 +17,3 @@ class ViewController: UIViewController {
         // secondVCは本スコープ内限定の変数であるため、参照カウント-1(合計参照カウント+1)
     }
 }
-
