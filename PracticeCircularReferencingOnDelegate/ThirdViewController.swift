@@ -23,5 +23,4 @@ final class ThirdViewController: UIViewController {
     deinit {
         print("ThirdVCがdeinitされた")
     }
-
 }

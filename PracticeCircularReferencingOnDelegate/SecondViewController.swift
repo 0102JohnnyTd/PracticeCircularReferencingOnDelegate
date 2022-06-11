@@ -23,7 +23,6 @@ final class SecondViewController: UIViewController {
     deinit {
         print("SecondVCがdeinitされた")
     }
-
 }
 
 extension SecondViewController: ThirdViewControllerDelegate {
